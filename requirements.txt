@@ -1,0 +1,2 @@
+fastapi[all]==0.112.1
+PyGithub==2.4.0
