@@ -1,35 +1,39 @@
 # DaaS 환경 내 SaaS 애플리케이션 운영 관리를 위한 플랫폼 구축(백엔드)
 
+## 프로젝트 설명
+DaaS(Desktop as a Service) 환경에서 SaaS(Software as aService) 애플리케이션을 배포하고
+이를 운영 및 관리하기 위한 통합 플랫폼 구축
+
 ## 목표 및 기능 
-## 사전 요구 사항
-1. AWS CLI 설치
-    1. export AWS_ACCESS_KEY_ID=ACCESS_KEY_ID
-    2. export AWS_SECRET_ACCESS_KEY=SECRET_ACCESS_KEY
-    3. export AWS_DEFAULT_REGION=DEFAULT_REGION
-2. Terraform 설치
-3. Python 가상환경 생성 및 의존성 설치
-    1. pip (파이썬 패키지 매니저)가 가상환경이 아닌 상태에서 의존성 설치 지원 X
- 4. 프로젝트 이름 및 설명
+1. DaaS 구축을 위한 API 구현
+2. SaaS 버전 관리를 위한 API 구현
 
-프로젝트의 이름과 간단한 설명을 포함합니다.
-목표 및 기능
+## 기술 스택
+Python==3.10.12<br>
+fastapi==0.112.1<br>
+uvicorn==0.30.6<br>
+httpx==0.27.0<br>
+pydantic==2.8.2<br>
+PyGithub==2.4.0<br>
+PyYAML==5.4.1<br>
+Terraform-CLI==1.9.5<br>
+AWS-CLI==2.17.37<br>
 
-프로젝트의 목표와 주요 기능을 설명합니다.
-설치 방법
+## 플로우 차트
+### Backend
+![백엔드-플로우차트](images/backend_logic.drawio.png)
 
-프로젝트를 설치하고 실행하는 방법을 단계별로 안내합니다.
-사용법
+### DaaS Connection Create
+![DaaS-Connection](images/connection_post.drawio.png)
 
-기본적인 사용 예시나 코드 스니펫을 제공합니다.
-기여 방법
+### DaaS Connection Delete
+![DaaS-Connection](images/connection_delete.drawio.png)
 
-다른 개발자들이 기여할 수 있는 방법에 대한 안내를 포함합니다.
-라이선스
+### SaaS Version Control
+![SaaS Version Control](images/version_control.drawio.png)
 
-프로젝트의 라이선스 정보를 명시합니다.
-연락처 정보
+### Backend CI/CD
+![Backend CI/CD](images/Jenkins_pipeline.png)
 
-문제나 질문이 있을 경우 연락할 수 있는 방법을 제공합니다.
-기타 정보
-
-프로젝트와 관련된 문서 링크, 참고 자료, FAQ 등을 포함할 수 있습니다.
+## 문의 
+meteo0718@gmail.com
