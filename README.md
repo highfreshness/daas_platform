@@ -9,6 +9,7 @@ DaaS(Desktop as a Service) 환경에서 SaaS(Software as aService) 애플리케�
 2. SaaS 버전 관리를 위한 API 구현
 
 ## 기술 스택
+Apache Guacamole==1.5.5<br>
 Python==3.10.12<br>
 fastapi==0.112.1<br>
 uvicorn==0.30.6<br>
